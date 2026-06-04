@@ -209,7 +209,7 @@
     </div>
 
     <script>
-     /** let data = JSON.parse(localStorage.getItem("badminton_rsvp")) || []; **/
+     let data = JSON.parse(localStorage.getItem("badminton_rsvp")) || [];
 
       function renderData() {
         const tableBody = document.getElementById("tableBody");
@@ -280,7 +280,7 @@
 
         data.push(member);
 
-        /**localStorage.setItem("badminton_rsvp", JSON.stringify(data));**/
+        localStorage.setItem("badminton_rsvp", JSON.stringify(data));
 
         renderData();
 
