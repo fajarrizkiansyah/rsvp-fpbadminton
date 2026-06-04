@@ -150,6 +150,7 @@
           <input type="text" id="nama" placeholder="Nama Member" />
 
           <select id="status">
+            <option value="" selected disabled>---Konfirmasi Kehadiran---</option>
             <option value="Hadir">Hadir</option>
             <option value="Tidak Hadir">Tidak Hadir</option>
           </select>
@@ -292,6 +293,7 @@
         renderData();
 
         document.getElementById("nama").value = "";
+        document.getElementById("hadir").selectedIndex = 0;
         document.getElementById("divisi").selectedIndex = 0;
         /**document.getElementById("catatan").value = "";**/
 
