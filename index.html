@@ -155,6 +155,7 @@
           </select>
 
           <select id="divisi">
+            <option value="" selected disabled>---Pilih Divisi---</option>
             <option value="Inti-Jaya">Inti Jaya</option>
             <option value="Kasir">Kasir</option>
             <option value="Mekanik">Mekanik</option>
@@ -252,6 +253,11 @@
           return;
         }
 
+        if (divisi === "") {
+          alert("Silakan pilih divisi");
+          return;
+        }
+
         /**const cekNama = data.some(
           (item) => item.nama.toLowerCase() === nama.toLowerCase()
         );**/
@@ -286,7 +292,8 @@
         renderData();
 
         document.getElementById("nama").value = "";
-        document.getElementById("catatan").value = "";
+        document.getElementById("divisi").selectedIndex = 0;
+        /**document.getElementById("catatan").value = "";**/
 
         document.getElementById("notif").innerText =
           "Data Berhasil Di Input, Terimakasih!";
