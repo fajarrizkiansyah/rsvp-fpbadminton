@@ -251,14 +251,14 @@
           return;
         }
 
-        const cekNama = data.some(
+        /**const cekNama = data.some(
           (item) => item.nama.toLowerCase() === nama.toLowerCase()
-        );
+        );**/
 
-        if (cekNama) {
+        /**if (cekNama) {
           alert("Nama sudah terdaftar!");
           return;
-        }
+        }**/
 
         const response = await fetch(
           "https://script.google.com/macros/s/AKfycbyA6GdiXjzUpOB0Q54l6NN_UcprISJyoHF3oIIUlfhnEWdF2K9l4eEOyTUKP_jBvDa5Nw/exec",
